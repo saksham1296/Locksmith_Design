@@ -12,41 +12,41 @@ import {
 
 export default function Footer() {
 	return (
-		<footer className="w-full h-[464px] px-[80px] py-[48px] bg-[#26344E] flex flex-col items-center justify-center">
-			<div className="flex flex-row items-center justify-between w-[1200px] h-[46px] gap-[48px]">
-				<div className="flex items-center justify-start gap-[5px] px-[20px] h-full">
+		<footer className="w-full bg-[#26344E] text-white px-4 sm:px-6 lg:px-[80px] py-10 flex flex-col items-center">
+			<div className="w-full max-w-screen-xl flex flex-col md:flex-row justify-between items-center gap-6">
+				<div className="flex items-center gap-2">
 					<Image
 						src="/logo.png"
 						alt="Logo"
-						className="w-[35px] h-[48px] mb-[5px] object-contain"
-						width={28}
-						height={32}
-						priority={true}
+						width={35}
+						height={48}
+						className="object-contain"
 					/>
-					<div className="nav-title font-roboto text-[#FFFFFF] text-[20px]">
-						LOCKSMITH HUB
-					</div>
+					<span className="text-lg sm:text-xl font-roboto">LOCKSMITH HUB</span>
 				</div>
-				<div className="flex items-center bg-white rounded-md overflow-hidden w-[455px] h-[46px]">
+
+				<div className="flex w-full md:w-auto bg-white rounded-md overflow-hidden">
 					<Image
 						src="/image/image 6.png"
 						alt="Email Icon"
-						className="w-[19.5px] h-[19.5px] object-contain ml-2"
-						width={19.5}
-						height={19.5}
+						width={20}
+						height={20}
+						className="ml-3 my-auto object-contain"
 					/>
 					<input
 						type="email"
 						placeholder="Enter your email for updates"
-						className="flex-1 px-2 py-2 outline-none text-sm text-gray-800 placeholder-gray-400"
+						className="flex-1 px-3 py-2 text-sm text-gray-800 outline-none"
 					/>
-					<button className="bg-blue-600 text-white w-[110px] h-[46px] ">
+					<button className="bg-blue-600 text-white px-4 py-2 text-sm font-medium whitespace-nowrap">
 						Submit
 					</button>
 				</div>
 			</div>
-			<div className="w-[1200px] h-[1px] bg-[#C1C7CD] mt-4"></div>
-			<div className="max-w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-[140px] text-[16px] text-[#FFFFFF] mt-8 justify-start">
+
+			<hr className="w-full max-w-screen-xl border-t border-gray-300 my-6" />
+
+			<div className="w-full max-w-screen-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-sm sm:text-base">
 				<div className="flex flex-col gap-3">
 					<p>About Us</p>
 					<p>Terms & Conditions</p>
@@ -54,17 +54,17 @@ export default function Footer() {
 					<p>Invest in Locksmith Hub</p>
 				</div>
 
-				<div className="flex flex-col gap-3 items-start mx-auto">
-					<h3 className="text-center font-bold mb-2">CONTACT US</h3>
-					<div className="flex items-start gap-2">
+				<div className="flex flex-col gap-3">
+					<h3 className="font-bold">CONTACT US</h3>
+					<div className="flex gap-2 items-start">
 						<FaPhoneAlt className="mt-1" />
 						<span>+1 (406) 555-0120</span>
 					</div>
-					<div className="flex items-start gap-2">
+					<div className="flex gap-2 items-start">
 						<FaEnvelope className="mt-1" />
 						<span>support@locksmithhub.net</span>
 					</div>
-					<div className="flex items-start gap-2">
+					<div className="flex gap-2 items-start">
 						<FaMapMarkerAlt className="mt-1" />
 						<span>
 							Allamano Business Hub, 5th Floor, <br />
@@ -73,10 +73,10 @@ export default function Footer() {
 					</div>
 				</div>
 
-				<div className="flex flex-col items-center gap-3">
-					<h3 className="font-bold mb-2">OUR SOCIAL MEDIA</h3>
+				<div className="flex flex-col items-start gap-3">
+					<h3 className="font-bold">OUR SOCIAL MEDIA</h3>
 					<p>Join Us</p>
-					<div className="flex gap-4 text-lg">
+					<div className="flex gap-4 text-xl">
 						<FaYoutube />
 						<FaFacebookF />
 						<FaTwitter />
@@ -85,18 +85,19 @@ export default function Footer() {
 					</div>
 				</div>
 			</div>
-			<div className="w-[1200px] h-[1px] bg-[#C1C7CD] mt-4"></div>
-			<div className="w-[1200px] h-[48px] flex flex-row items-center justify-between mt-4 text-[#FFFFFF] text-[16px]">
-				<div className="h-[20px] text-[14px] leading-[20px] font-medium">
-					{" "}
+
+			<hr className="w-full max-w-screen-xl border-t border-gray-300 my-6" />
+
+			<div className="w-full max-w-screen-xl flex flex-col md:flex-row justify-between items-center text-xs sm:text-sm gap-4">
+				<p className="text-center md:text-left">
 					© 2025 Locksmith Hub, Inc. - All Rights Reserved
-				</div>
-				<div className="flex flex-row items-center justify-evenly gap-[20px]">
-					<div>Home</div>
-					<div>How it Works</div>
-					<div>FAQs</div>
-					<div>Blog</div>
-					<div>Careers</div>
+				</p>
+				<div className="flex flex-wrap justify-center md:justify-end gap-4">
+					<span>Home</span>
+					<span>How it Works</span>
+					<span>FAQs</span>
+					<span>Blog</span>
+					<span>Careers</span>
 				</div>
 			</div>
 		</footer>
