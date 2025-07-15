@@ -19,7 +19,7 @@ export default function Home() {
 							Availability!
 						</h1>
 
-						<p className="-mt-3 text-center text-[14px] sm:text-[14px] md:text-[16px] lg:text-center md:text-center sm:text-center sm:text-[18px] md:text-[20px] lg:text-[18px] font-roboto text-gray-600 tracking-tight leading-relaxed max-w-[650px]">
+						<p className="-mt-3 text-center text-[14px] sm:text-[14px] md:text-[16px] lg:text-center md:text-center sm:text-centerlg:text-[18px] font-roboto text-gray-600 tracking-tight leading-relaxed max-w-[650px]">
 							<span className="text-black font-medium">
 								Fast, Reliable, and Secure Locksmith Services at Your
 								Fingertips!
@@ -96,8 +96,8 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className="flex flex-col items-center justify-center mt-8 px-4 sm:px-6 lg:px-12 max-w-screen-xl mx-auto ">
-				<h2 className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] font-roboto font-normal text-[#010205] leading-[1.3] tracking-[-0.03em] text-center mt-10">
+			<div className="flex flex-col items-center justify-center mt-8 px-4 sm:px-6 lg:px-12 max-w-screen-xl mx-auto lg:mb-10 mb-10  ">
+				<h2 className="text-[24px] sm:text-[28px] mb-0 lg:mb-10 md:text-[32px] lg:text-[36px] font-roboto font-normal text-[#010205] leading-[1.3] tracking-[-0.03em] text-center mt-10">
 					What Makes Us Unique?
 				</h2>
 
